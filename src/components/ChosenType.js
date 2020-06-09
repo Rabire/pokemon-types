@@ -1,21 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import './ChosenType.css'
+import "./ChosenType.css";
 
-import Card from './Card'
+import Card from "./Card";
 
 function ChosenType(props) {
-
     //console.log(props)
 
-    return(
+    return (
         <div className="chosen-type">
-            {
-                props.type &&
-                <Card type={props.type} />
-            }
+            {props.type && <Card type={props.type} />}
         </div>
-    )
+    );
 }
 
-export default ChosenType
+export default ChosenType;

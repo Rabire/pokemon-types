@@ -2,163 +2,183 @@
     "types": [
         {
             "id": 1,
-            "color": "#A8A878",
+            "colorDark": "#6D6D4E",
+            "colorLight": "#C6C6A7",
             "name": "normal",
             "fr-name": "normal",
             "url": "https://pokeapi.co/api/v2/type/1/",
-            "img": "normal.png"
+            "img": "Normal.png"
         },
         {
             "id": 2,
-            "color": "#C03028",
+            "colorDark": "#7D1F1A",
+            "colorLight": "#D67873",
             "name": "fighting",
             "fr-name": "combat",
             "url": "https://pokeapi.co/api/v2/type/2/",
-            "img": "fighting.png"
+            "img": "Fighting.png"
         },
         {
             "id": 3,
-            "color": "#A890F0",
+            "colorDark": "#6D5E9C",
+            "colorLight": "#C6B7F5",
             "name": "flying",
             "fr-name": "vol",
             "url": "https://pokeapi.co/api/v2/type/3/",
-            "img": "flying.png"
+            "img": "Flying.png"
         },
         {
             "id": 4,
-            "color": "#A040A0",
+            "colorDark": "#682A68",
+            "colorLight": "#C183C1",
             "name": "poison",
             "fr-name": "poison",
             "url": "https://pokeapi.co/api/v2/type/4/",
-            "img": "poison.png"
+            "img": "Poison.png"
         },
         {
             "id": 5,
-            "color": "#927D44",
+            "colorDark": "#927D44",
+            "colorLight": "#EBD69D",
             "name": "ground",
             "fr-name": "sol",
             "url": "https://pokeapi.co/api/v2/type/5/",
-            "img": "ground.png"
+            "img": "Ground.png"
         },
         {
             "id": 6,
-            "color": "#B8A038",
+            "colorDark": "#786824",
+            "colorLight": "#D1C17D",
             "name": "rock",
             "fr-name": "roche",
             "url": "https://pokeapi.co/api/v2/type/6/",
-            "img": "rock.png"
+            "img": "Rock.png"
         },
         {
             "id": 7,
-            "color": "#A8B820",
+            "colorDark": "#A8B820",
+            "colorLight": "#C6D16E",
             "name": "bug",
             "fr-name": "insecte",
             "url": "https://pokeapi.co/api/v2/type/7/",
-            "img": "bug.png"
+            "img": "Bug.png"
         },
         {
             "id": 8,
-            "color": "#705898",
+            "colorDark": "#493963",
+            "colorLight": "#A292BC",
             "name": "ghost",
             "fr-name": "spectre",
             "url": "https://pokeapi.co/api/v2/type/8/",
-            "img": "ghost.png"
+            "img": "Ghost.png"
         },
         {
             "id": 9,
-            "color": "#B8B8D0",
+            "colorDark": "#787887",
+            "colorLight": "#D1D1E0",
             "name": "steel",
             "fr-name": "acier",
             "url": "https://pokeapi.co/api/v2/type/9/",
-            "img": "steel.png"
+            "img": "Steel.png"
         },
         {
             "id": 10,
-            "color": "#9299A4",
+            "colorDark": "#F08030",
+            "colorLight": "#F5AC78",
             "name": "fire",
             "fr-name": "feu",
             "url": "https://pokeapi.co/api/v2/type/10/",
-            "img": "fire.png"
+            "img": "Fire.png"
         },
         {
             "id": 11,
-            "color": "#9299A4",
+            "colorDark": "#445E9C",
+            "colorLight": "#9DB7F5",
             "name": "water",
             "fr-name": "eau",
             "url": "https://pokeapi.co/api/v2/type/11/",
-            "img": "water.png"
+            "img": "Water.png"
         },
         {
             "id": 12,
-            "color": "#9299A4",
+            "colorDark": "#4E8234",
+            "colorLight": "#A7DB8D",
             "name": "grass",
             "fr-name": "plante",
             "url": "https://pokeapi.co/api/v2/type/12/",
-            "img": "grass.png"
+            "img": "Grass.png"
         },
         {
             "id": 13,
-            "color": "#9299A4",
+            "colorDark": "#A1871F",
+            "colorLight": "#FAE078",
             "name": "electric",
-            "fr-name": "electrik",
+            "fr-name": "électrik",
             "url": "https://pokeapi.co/api/v2/type/13/",
-            "img": "electric.png"
+            "img": "Electric.png"
         },
         {
             "id": 14,
-            "color": "#9299A4",
+            "colorDark": "#A13959",
+            "colorLight": "#FA92B2",
             "name": "psychic",
             "fr-name": "psy",
             "url": "https://pokeapi.co/api/v2/type/14/",
-            "img": "psychic.png"
+            "img": "Psychic.png"
         },
         {
             "id": 15,
-            "color": "#9299A4",
+            "colorDark": "#638D8D",
+            "colorLight": "#BCE6E6",
             "name": "ice",
             "fr-name": "glace",
             "url": "https://pokeapi.co/api/v2/type/15/",
-            "img": "ice.png"
+            "img": "Ice.png"
         },
         {
             "id": 16,
-            "color": "#9299A4",
+            "colorDark": "#4924A1",
+            "colorLight": "#A27DFA",
             "name": "dragon",
             "fr-name": "dragon",
             "url": "https://pokeapi.co/api/v2/type/16/",
-            "img": "dragon.png"
+            "img": "Dragon.png"
         },
         {
             "id": 17,
-            "color": "#9299A4",
+            "colorDark": "#49392F",
+            "colorLight": "#A29288",
             "name": "dark",
             "fr-name": "obscur",
             "url": "https://pokeapi.co/api/v2/type/17/",
-            "img": "dark.png"
+            "img": "Dark.png"
         },
         {
             "id": 18,
-            "color": "#9299A4",
+            "colorDark": "#9B6470",
+            "colorLight": "#F4BDC9",
             "name": "fairy",
-            "fr-name": "fee",
+            "fr-name": "fée",
             "url": "https://pokeapi.co/api/v2/type/18/",
-            "img": "fairy.png"
+            "img": "Fairy.png"
         },
         {
             "id": 19,
-            "color": "#9299A4",
+            "colorDark": "#44685E",
+            "colorLight": "#9DC1B7",
             "name": "unknown",
             "fr-name": "inconnu",
             "url": "https://pokeapi.co/api/v2/type/10001/",
-            "img": "normal.png"
+            "img": "Unknown.png"
         },
         {
             "id": 10002,
-            "color": "#9299A4",
+            "colorDark": "#2C2E2B",
+            "colorLight": "#767775",
             "name": "shadow",
-            "fr-name": "tenebr",
+            "fr-name": "ténèbres",
             "url": "https://pokeapi.co/api/v2/type/10002/",
-            "img": "shadow.png"
+            "img": "Shadow.png"
         }
     ]
 }

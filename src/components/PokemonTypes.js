@@ -19,21 +19,11 @@ function PokemonTypes() {
         }
     }
 
-    console.log(chosenTypes);
+    //console.debug(chosenTypes);
 
     return (
         <div className="pokemon-types">
             <Header types={types} addType={addType} />
-
-            <div className="chosen-types">
-                <ChosenType type={chosenTypes[0]} />
-                <ChosenType type={chosenTypes[1]} />
-            </div>
-
-            <div className="statistics-tab">
-                <TypeStatistics type={chosenTypes[0]} />
-                <TypeStatistics type={chosenTypes[1]} />
-            </div>
         </div>
     );
 }
