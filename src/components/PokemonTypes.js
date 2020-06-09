@@ -5,14 +5,13 @@ import TypesData from "../datas/TypesData.json";
 
 import Header from "./Header";
 import ChosenType from "./ChosenType";
-import TypeStatistics from "./TypeStatistics";
 
 function PokemonTypes() {
     const types = TypesData.types;
-    const [chosenTypes, setChosenTypes] = useState([]);
+    const [chosenTypes, setChosenTypes] = useState([TypesData.types[10]]);
 
     function addType(typeToPush) {
-        if (chosenTypes.length < 2) {
+        if (chosenTypes.length < 5) {
             setChosenTypes([...chosenTypes, typeToPush]);
         } else {
             alert("Already 2 types chosen");
@@ -24,6 +23,11 @@ function PokemonTypes() {
     return (
         <div className="pokemon-types">
             <Header types={types} addType={addType} />
+            <div className="chosen-types">
+                {chosenTypes.map((typeChoosed, index) => (
+                    <ChosenType key={index} typeChoosed={typeChoosed} />
+                ))}
+            </div>
         </div>
     );
 }
