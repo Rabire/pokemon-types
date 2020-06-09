@@ -1,0 +1,23 @@
+.card {
+    background-color: blueviolet;
+    color: white;
+
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+
+    border-radius: 6px;
+
+    text-align: center;
+    display: flex;
+}
+
+h3 {
+    margin: auto;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    */
+}

@@ -1,0 +1,15 @@
+.chosen-types {
+    background-color: turquoise;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.statistics-tab {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+}
+
