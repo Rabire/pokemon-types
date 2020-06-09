@@ -33,14 +33,11 @@ function ChosenType(props) {
         }
     }, [props.typeChoosed]);
 
-    /*
-    const listDoubleDmgCards = doubleDamageFrom.map((apiObject, index) => {
-        const monFilter = TypesData.types.find(
-            (truc) => truc.name == apiObject.name
+    function removeType() {
+        props.setChosenTypes(
+            props.chosenTypes.filter((e) => e !== props.typeChoosed)
         );
-        return <Card key={index} type={monFilter} power={2} />;
-    });
-    */
+    }
 
     function getMatchingType(damageTypeArray, power) {
         return damageTypeArray.map((apiObject, index) => {
@@ -53,12 +50,14 @@ function ChosenType(props) {
 
     return (
         <div className="chosen-type">
-            <div className="choosed-type">
+            <div className="choosed-type" onClick={removeType}>
                 <Card type={props.typeChoosed} />
             </div>
             <br />
             {getMatchingType(doubleDamageFrom, 2)}
+            <hr />
             {getMatchingType(halfDamageFrom, 0.5)}
+            <hr />
             {getMatchingType(noDamageFrom, 0)}
         </div>
     );

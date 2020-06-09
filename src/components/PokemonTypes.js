@@ -8,13 +8,13 @@ import ChosenType from "./ChosenType";
 
 function PokemonTypes() {
     const types = TypesData.types;
-    const [chosenTypes, setChosenTypes] = useState([TypesData.types[10]]);
+    const [chosenTypes, setChosenTypes] = useState([]);
 
     function addType(typeToPush) {
         if (chosenTypes.length < 5) {
             setChosenTypes([...chosenTypes, typeToPush]);
         } else {
-            alert("Already 2 types chosen");
+            alert("Already 5 types chosend");
         }
     }
 
@@ -25,7 +25,12 @@ function PokemonTypes() {
             <Header types={types} addType={addType} />
             <div className="chosen-types">
                 {chosenTypes.map((typeChoosed, index) => (
-                    <ChosenType key={index} typeChoosed={typeChoosed} />
+                    <ChosenType
+                        key={index}
+                        typeChoosed={typeChoosed}
+                        chosenTypes={chosenTypes}
+                        setChosenTypes={setChosenTypes}
+                    />
                 ))}
             </div>
         </div>
