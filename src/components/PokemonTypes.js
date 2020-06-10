@@ -15,7 +15,8 @@ function PokemonTypes() {
     const [isActive, setIsActive] = useState(false);
 
     const [lang, setLang] = useState("en");
-    const [alertMessage, setAlertMessage] = useState("TO MANY TYPES SELECTED");
+    const defaultEnglishMessage = "TOO MANY TYPES SELECTED";
+    const [alertMessage, setAlertMessage] = useState(defaultEnglishMessage);
 
     const contextValue = {
         lang,
@@ -37,7 +38,7 @@ function PokemonTypes() {
     function toggleLanguage() {
         if (lang === "fr") {
             setLang("en");
-            setAlertMessage("TO MANY TYPES SELECTED");
+            setAlertMessage(defaultEnglishMessage);
         } else if (lang === "en") {
             setLang("fr");
             setAlertMessage("TROP DE TYPES SÉLECTIONNÉS");
