@@ -12,17 +12,17 @@ import AlertPopup from "./AlertPopup";
 function PokemonTypes() {
     const types = TypesData.types;
     const [chosenTypes, setChosenTypes] = useState([]);
-    const [lang, setLang] = useState("en");
     const [isActive, setIsActive] = useState(false);
+
+    const [lang, setLang] = useState("en");
+    const [alertMessage, setAlertMessage] = useState("TO MANY TYPES SELECTED");
 
     const contextValue = {
         lang,
         setLang,
     };
 
-    function toggleIsActive() {
-        setIsActive(!isActive);
-    }
+    const toggleIsActive = () => setIsActive(!isActive);
 
     function addType(typeToPush) {
         if (chosenTypes.length < 5) {
@@ -35,8 +35,13 @@ function PokemonTypes() {
     //console.debug(chosenTypes);
 
     function toggleLanguage() {
-        lang === "fr" ? setLang("en") : console.log("language = fr");
-        lang === "en" ? setLang("fr") : console.log("language = en");
+        if (lang === "fr") {
+            setLang("en");
+            setAlertMessage("TO MANY TYPES SELECTED");
+        } else if (lang === "en") {
+            setLang("fr");
+            setAlertMessage("TROP DE TYPES SELECTIONNES");
+        }
     }
 
     return (
@@ -44,7 +49,7 @@ function PokemonTypes() {
             <div className="pokemon-types">
                 {isActive && (
                     <AlertPopup
-                        message={"TROP DE TYPES !"}
+                        message={alertMessage}
                         toggleIsActive={toggleIsActive}
                     />
                 )}
