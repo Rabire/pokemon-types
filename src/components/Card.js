@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../LanguageContext";
 
 import "./Card.css";
 
@@ -12,6 +14,8 @@ function Card(props) {
             ")",
     };
 
+    const { lang, setLang } = useContext(LanguageContext);
+
     //console.log(props.type.colorDark);
 
     const iconsPath = require.context("../img/type-icons/", true);
@@ -20,7 +24,10 @@ function Card(props) {
     return (
         <div className="card" style={style}>
             <img src={typeIcon} alt="icon" />
-            <h3>{props.type.name.toUpperCase()}</h3>
+            <h3>
+                {lang === "en" && props.type.name.toUpperCase()}
+                {lang === "fr" && props.type.fr_name.toUpperCase()}
+            </h3>
             {props.power && <h5>x {props.power}</h5>}
         </div>
     );

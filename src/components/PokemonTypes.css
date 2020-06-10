@@ -13,3 +13,12 @@
     justify-content: space-around;
 }
 
+.lang-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: darkslategray;
+    color: floralwhite;
+    padding: 5px;
+    cursor: pointer;
+}

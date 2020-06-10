@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import PokemonTypes from './components/PokemonTypes'
+import PokemonTypes from "./components/PokemonTypes";
 
-import './App.css';
+import "./App.css";
 
 function App() {
     return (
         <div className="App">
             <PokemonTypes />
-
         </div>
     );
 }
