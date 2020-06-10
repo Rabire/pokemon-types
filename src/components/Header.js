@@ -18,6 +18,7 @@ function Header(props) {
                     <Card type={type} />
                 </div>
             ))}
+            <br />
         </div>
     );
 }

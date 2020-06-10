@@ -149,7 +149,7 @@
             "colorDark": "#49392F",
             "colorLight": "#A29288",
             "name": "dark",
-            "fr_name": "obscur",
+            "fr_name": "ténèbres",
             "url": "https://pokeapi.co/api/v2/type/17/",
             "img": "Dark.png"
         },
@@ -161,24 +161,6 @@
             "fr_name": "fée",
             "url": "https://pokeapi.co/api/v2/type/18/",
             "img": "Fairy.png"
-        },
-        {
-            "id": 19,
-            "colorDark": "#44685E",
-            "colorLight": "#9DC1B7",
-            "name": "unknown",
-            "fr_name": "inconnu",
-            "url": "https://pokeapi.co/api/v2/type/10001/",
-            "img": "Unknown.png"
-        },
-        {
-            "id": 10002,
-            "colorDark": "#2C2E2B",
-            "colorLight": "#767775",
-            "name": "shadow",
-            "fr_name": "ténèbres",
-            "url": "https://pokeapi.co/api/v2/type/10002/",
-            "img": "Shadow.png"
         }
     ]
 }
