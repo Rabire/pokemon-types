@@ -34,6 +34,7 @@ function ChosenType(props) {
     }, [props.typeChoosed]);
 
     function removeType() {
+        props.setIsActive(false);
         props.setChosenTypes(
             props.chosenTypes.filter((e) => e !== props.typeChoosed)
         );

@@ -40,7 +40,7 @@ function PokemonTypes() {
             setAlertMessage("TO MANY TYPES SELECTED");
         } else if (lang === "en") {
             setLang("fr");
-            setAlertMessage("TROP DE TYPES SELECTIONNES");
+            setAlertMessage("TROP DE TYPES SÉLECTIONNÉS");
         }
     }
 
@@ -64,6 +64,7 @@ function PokemonTypes() {
                             typeChoosed={typeChoosed}
                             chosenTypes={chosenTypes}
                             setChosenTypes={setChosenTypes}
+                            setIsActive={setIsActive}
                         />
                     ))}
                 </div>
