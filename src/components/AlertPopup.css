@@ -1,0 +1,27 @@
+.alert-popup {
+    background-color: darkgrey;
+    width: 300px;
+    height: 150px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    border-radius: 12px;
+    border: 1px black solid;
+}
+
+.message {
+    margin-top: 50px;
+}
+
+.exit-btn {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 0px 12px 0px 0px;
+    float: right;
+}

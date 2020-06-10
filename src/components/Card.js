@@ -14,7 +14,7 @@ function Card(props) {
             ")",
     };
 
-    const { lang, setLang } = useContext(LanguageContext);
+    const { lang } = useContext(LanguageContext);
 
     //console.log(props.type.colorDark);
 
